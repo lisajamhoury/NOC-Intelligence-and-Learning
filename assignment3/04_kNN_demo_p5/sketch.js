@@ -1,7 +1,7 @@
 var training = [];
 
 // What is k
-var k = 30;
+var k = 1;
 
 // All the training data
 var data;
@@ -14,7 +14,7 @@ var kSlider;
 var kParagraph;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(1200, 600);
 
   // Create the slider interface
   kSlider = createSlider(1, 3, 1);
@@ -25,7 +25,7 @@ function setup() {
   kSlider.input(updateLabel);
 
   // Create 50 random data points
-  for (var i = 0; i < 50; i++) {
+  for (var i = 0; i < 8; i++) {
     var x = random(width);
     var y = random(height);
 
